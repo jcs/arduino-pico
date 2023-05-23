@@ -4,6 +4,7 @@ set -e # Exit on error
 
 export PICO_SDK_PATH="$(cd ../../pico-sdk/; pwd)"
 export PATH="$(cd ../../system/arm-none-eabi/bin; pwd):$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
 
 rm -rf build
 mkdir build
